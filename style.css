@@ -1,0 +1,197 @@
+/*
+    Copyright© 2025 雨宮とあ All Right Reserved.
+*/
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) {
+    /*
+        ドロップダウンメニューの設定
+    */
+    #menuWrapper  {
+        display: block;
+        background-color: #1f1e3360;
+        position: fixed;
+        width: 100%;
+        height: 30%;
+    }
+    .mainFSMenuPositioning {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 0px 0px 0px;
+        font-size: 20px;
+    }
+    #mainFSMenuOpener {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin: 0 0 0 auto;
+        right: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+        border: solid 2px #444;
+    }
+    .mainFSMenuLine {
+        width: 100%;
+        height: 15px;
+        position: relative;
+        border-bottom: solid 4px #444;
+    }
+    /*
+        ///////////////////////
+    */
+
+
+    /*
+        JavaScriptで使うメニューの表示非表示設定CSS
+    */
+    .openMenu {
+        visibility: visible;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 0.25s ease-in-out;
+    }
+    .closeMenu {
+        visibility: hidden;
+        transform: translateY(-100px);
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+    }
+    /*
+        ///////////////////////
+    */
+
+
+    /*
+        ドロップダウンメニュー内のCSS
+    */
+    #mainFSMenuList {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    #mainFSMenuList li {
+        font-weight: 700;
+        -webkit-text-stroke: 2px #fff;
+        paint-order: stroke;
+    }
+    .subMenu {
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.15s ease-in-out;
+        list-style: none;
+    }
+    li.menuHover:hover  ul.subMenu {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.15s ease-in-out;
+    }
+    ul.subMenu li:hover {
+        text-decoration-line: underline;
+        text-decoration-color: #000;
+    }
+    /*
+        ///////////////////////
+    */
+
+
+    /*
+        ヘッダー内のCSS
+    */
+    .headerWrapper {
+        border-bottom: 2px solid #000;
+    }
+    .mainHeaderPositioning {
+        display: flex;
+    }
+    .mainHeaderLogo {
+        width: 250px;
+        margin: 0px;
+    }
+    .mainHeaderLogo img {
+        width: 100%;
+    }
+    #mainHeaderMenuList {
+        display: flex;
+        width: 700px;
+    }
+    #mainHeaderMenuList {
+        list-style-type: none;
+        padding-left: 15px;
+    }
+    .mainHeaderPositioning nav {
+        display: flex;
+        align-items: center;
+    }
+    li a {
+        text-decoration: none;
+        color: #000;
+    }
+    /*
+        ///////////////////////
+    */
+
+    /*
+        メインコンテンツCSS設定
+    */
+    .mainPositioning {
+        display: flex;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    #BoxPosition {
+        display: block;
+        margin: 0px;
+    }
+    #sideBoxPosition {
+        display: block;
+        margin: 0px;
+    }
+    section.Block {
+        color: white;
+        width: 500px;
+        height: 400px;
+        background-color: midnightblue;
+        border: solid 1px black;
+        border-radius: 15px;
+        margin: 5px 5px 0px 0px;
+    }
+    .Block.blockTwo {
+        margin: 5px 0px 0px 0px;
+    }
+    section.longBlock {
+        color: white;
+        width: 500px;
+        height: 805px;
+        background-color: midnightblue;
+        border: solid 1px black;
+        border-radius: 15px;
+        margin: 5px 0px 0px 0px;
+    }
+    .firstBox {
+        margin: 20px 0px 0px 20px;
+    }
+
+    /*
+        ///////////////////////
+    */
+
+    /*
+        フッター設定
+    */
+    .footer_fontEdit {
+        font-size: smaller;
+        text-align: center;
+    }
+    /*
+        ///////////////////////
+    */
+
+}
